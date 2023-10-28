@@ -35,11 +35,11 @@ export default function Features({temp, windSpeed, city, humidity, icon, handleB
   return (
     <div className="bg-slate-700 py-24 sm:py-32 h-screen">
       <div className="mx-auto max-w-7xl px-6 lg:px-8  py-[6%] bg-white rounded-lg">
-        <div className="mx-auto max-w-2xl lg:text-center sm:flex sm:flex-col sm:items-center">
-          <p className=" text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-indigo-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300">
+        <div className="mx-auto max-w-2xl lg:text-center ">
+          <p className=" text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-indigo-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-300 min-[240px]:text-center">
             Weather App
           </p>
-          <div className="search flex items-center mt-[5%] ml-8">
+          <div className="search flex items-center mt-[5%] justify-center ml-[5%]">
             <Search />
             <Button handleButton={handleButton}/>
           </div>
